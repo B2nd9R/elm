@@ -90,7 +90,7 @@
                             <div class="input-zone">
                                 <label data-i18n="demo_label_topic">عنوان الدرس</label>
                                 <input type="text" id="prep-topic" data-i18n-placeholder="demo_placeholder_topic"
-                                    placeholder="مثال: كان وأخواتها">
+                                    value="كان وأخواتها" readonly style="background:#f8f9fa; cursor:not-allowed;">
                                 <label data-i18n="demo_label_grade">المرحلة</label>
                                 <select id="prep-grade">
                                     <option value="primary" data-i18n="demo_option_primary">الابتدائية</option>
@@ -118,7 +118,8 @@
                             <div class="input-zone">
                                 <label data-i18n="demo_label_student">نص الطالب</label>
                                 <textarea id="correct-input" data-i18n-placeholder="demo_placeholder_correct"
-                                    placeholder="اكتب النص هنا..."></textarea>
+                                    placeholder="اكتب النص هنا..." rows="6" readonly
+                                    style="background:#f8f9fa; cursor:not-allowed;">كتب الطالب واجبة في البيت. وكانت الاسئله صعبه جداً. لاكن استطاع ان يحلها بنجاح. وحصل على درجه عاليه في الامتحان النهائي.</textarea>
                                 <button class="btn primary-btn full-width" id="btn-run-correct"
                                     onclick="runCorrectDemo()" data-i18n="demo_btn_correct">تصحيح فوري</button>
                             </div>
@@ -182,6 +183,8 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="js/demo-prep-enhanced.js"></script>
+    <script src="js/demo-correct-enhanced.js"></script>
 </body>
 
 </html>
