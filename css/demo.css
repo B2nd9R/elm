@@ -1,0 +1,189 @@
+/* 
+  File: css/demo.css
+  Purpose: Demo page (demo.html) interactive panel and sidebar layout.
+*/
+
+.demo-wrapper {
+    display: flex;
+    background: #fff;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    min-height: 600px;
+}
+
+.demo-sidebar {
+    width: 280px;
+    background: var(--bg-soft);
+    border-inline-end: 1px solid rgba(0, 0, 0, 0.06);
+    padding: 35px 25px;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 800;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: var(--primary);
+}
+
+.demo-nav li {
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: var(--trans-med);
+}
+
+.demo-nav li:hover {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.demo-nav li.active {
+    background: var(--primary);
+    color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 85, 55, 0.15);
+}
+
+.demo-content {
+    padding: 45px;
+    flex-grow: 1;
+    background: #fff;
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+    border-bottom: 2px solid var(--bg-soft);
+    padding-bottom: 20px;
+}
+
+.model-badge {
+    background: var(--bg-soft);
+    padding: 6px 14px;
+    border-radius: var(--radius-pill);
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    border: 1px solid #ddd;
+}
+
+.split-view {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 45px;
+}
+
+.input-zone {
+    background: var(--bg-soft);
+    padding: 30px;
+    border-radius: var(--radius-md);
+    height: max-content;
+}
+
+.input-zone label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: var(--primary);
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+    border: 2px solid #ddd;
+    background: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    margin-bottom: 25px;
+    transition: var(--trans-fast);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(0, 85, 55, 0.1);
+    outline: none;
+}
+
+.output-zone {
+    background: var(--bg-soft);
+    border-radius: var(--radius-md);
+    padding: 35px;
+    min-height: 400px;
+    position: relative;
+    border: 2px dashed #ddd;
+}
+
+.empty-state {
+    text-align: center;
+    color: #ccc;
+    padding-top: 100px;
+}
+
+.empty-state i {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.demo-panel {
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1100px) {
+    .split-view {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .demo-wrapper {
+        flex-direction: column;
+    }
+
+    .demo-sidebar {
+        width: 100%;
+        border-inline-end: 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .demo-nav {
+        display: flex;
+        overflow-x: auto;
+        gap: 10px;
+    }
+
+    .demo-nav li {
+        white-space: nowrap;
+    }
+}

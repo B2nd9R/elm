@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="nav_solution">عِلّم - الحل المتكامل</title>
+
+    <!-- SEO & Social Meta -->
+    <meta name="description"
+        content="استكشف عِلّم - أول منصة تعليمية سعودية سيادية تعتمد على نموذج علّام للذكاء الاصطناعي."
+        data-i18n-meta="meta_desc">
+    <meta property="og:title" content="عِلّم - مستقبل التعليم الرقمي السعودي" data-i18n-meta="meta_og_title">
+    <meta property="og:description"
+        content="استكشف عِلّم - أول منصة تعليمية سعودية سيادية تعتمد على نموذج علّام للذكاء الاصطناعي."
+        data-i18n-meta="meta_desc">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="https://github.com/B2nd9R/elm">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="عِلّم - مستقبل التعليم الرقمي السعودي" data-i18n-meta="meta_og_title">
+    <meta name="twitter:description"
+        content="استكشف عِلّم - أول منصة تعليمية سعودية سيادية تعتمد على نموذج علّام للذكاء الاصطناعي."
+        data-i18n-meta="meta_desc">
+    <meta name="twitter:image" content="logo.png">
+
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/solution.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" alt="Elm Logo" class="nav-logo-img"></a>
+            </div>
+            <button class="mobile-toggle" onclick="toggleMenu()" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link" data-i18n="nav_home">الرئيسية</a>
+                <a href="solution.html" class="nav-link active" data-i18n="nav_solution">الحل</a>
+                <a href="demo.html" class="nav-link special-link" data-i18n="nav_demo">البروتوتايب</a>
+                <a href="allam.html" class="nav-link" data-i18n="nav_allam">نموذج عّلام</a>
+                <a href="tech.html" class="nav-link" data-i18n="nav_tech">التقنية</a>
+                <a href="team.html" class="nav-link" data-i18n="nav_team">الفريق</a>
+                <a href="contact.html" class="nav-link" data-i18n="nav_contact">تواصل معنا</a>
+                <button id="lang-toggle" onclick="i18n.switchLanguage()" class="btn-lang"
+                    style="margin-right:10px;">En</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="solution-hero">
+        <div class="container text-center">
+            <div class="badge-national" data-i18n="nav_solution">الحل المتكامل</div>
+            <h1 class="hero-title reveal" data-i18n="sol_hero_title">فجوة التعليم الرقمي وحتمية السيادة</h1>
+            <p class="hero-subtitle reveal reveal-delay-1" data-i18n="sol_hero_desc">نظام بيئي متكامل يعتمد على نموذج
+                "علّام" السعودي، مستضاف على سحابة محلية آمنة.</p>
+        </div>
+    </header>
+
+    <!-- Problem Cards -->
+    <section class="section" style="background:var(--bg-light);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" data-i18n="nav_problem">المشكلة</span>
+                <h2 data-i18n="sol_challenges_title">التحديات الحالية</h2>
+            </div>
+            <div class="cards-grid">
+                <div class="info-card reveal">
+                    <div class="icon-box"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                    <h3 data-i18n="sol_c1_title">المشكلة الوطنية</h3>
+                    <p data-i18n="sol_c1_desc">اعتماد التعليم على نماذج عالمية تفتقر للدقة وتهدد الهوية.</p>
+                </div>
+                <div class="info-card reveal reveal-delay-1">
+                    <div class="icon-box"><i class="fa-solid fa-fingerprint"></i></div>
+                    <h3 data-i18n="sol_c2_title">السيادة الرقمية</h3>
+                    <p data-i18n="sol_c2_desc">الحاجة الماسة لامتلاك البنية التحتية لضمان أمن البيانات.</p>
+                </div>
+                <div class="info-card reveal reveal-delay-2">
+                    <div class="icon-box"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3 data-i18n="sol_c3_title">الحل</h3>
+                    <p data-i18n="sol_c3_desc">دمج نموذج علّام مع خدمات سحابية وطنية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" data-i18n="nav_features">المميزات</span>
+                <h2 data-i18n="sol_why_elm">لماذا عِلّم هو الحل الأمثل؟</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fa-solid fa-brain"></i>
+                    <h4 data-i18n="feat_1_title">فهم السياق</h4>
+                    <p data-i18n="feat_1_desc">نموذج مدرب على الثقافة المحلية.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-check-double"></i>
+                    <h4 data-i18n="feat_2_title">تصحيح دقيق</h4>
+                    <p data-i18n="feat_2_desc">دقة عالية في النحو والصرف.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-scroll"></i>
+                    <h4 data-i18n="feat_3_title">تحضير ذكي</h4>
+                    <p data-i18n="feat_3_desc">خطط دروس متوافقة مع المناهج.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h4 data-i18n="feat_4_title">سيادة البيانات</h4>
+                    <p data-i18n="feat_4_desc">بياناتك لا تغادر المملكة.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-bolt"></i>
+                    <h4 data-i18n="feat_5_title">استجابة فورية</h4>
+                    <p data-i18n="feat_5_desc">بنية سحابية فائقة السرعة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section" style="background:var(--bg-light);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" data-i18n="nav_process">العملية</span>
+                <h2 data-i18n="sol_process_title">رحلة البيانات في عِلّم</h2>
+            </div>
+            <div class="steps-container">
+                <div class="step-item">
+                    <div class="step-circle">1</div>
+                    <span data-i18n="step_1">إدخال الموضوع</span>
+                </div>
+                <div class="step-line"></div>
+                <div class="step-item">
+                    <div class="step-circle">2</div>
+                    <span data-i18n="step_2">المعالجة (ALLaM)</span>
+                </div>
+                <div class="step-line"></div>
+                <div class="step-item">
+                    <div class="step-circle">3</div>
+                    <span data-i18n="step_3">التوليد/التصحيح</span>
+                </div>
+                <div class="step-line"></div>
+                <div class="step-item">
+                    <div class="step-circle">4</div>
+                    <span data-i18n="step_4">النتيجة النهائية</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pre-Footer CTA -->
+    <section class="pre-footer">
+        <div class="container">
+            <div class="cta-card reveal">
+                <h2 data-i18n="cta_title">ابدأ رحلتك التعليمية اليوم</h2>
+                <p data-i18n="cta_desc">انضم إلى آلاف المعلمين الذين يساهمون في بناء مستقبل التعليم الرقمي في المملكة.
+                </p>
+                <a href="demo.html" class="btn primary-btn" data-i18n="cta_btn">جرب البروتوتايب الآن</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-waves">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3 data-i18n="nav_home">عِلّم</h3>
+                    <p class="footer-tagline" data-i18n="footer_tagline">نحو تعليم وطني ذكي بلمسة عالمية.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_col2_title">روابط</h4>
+                    <a href="index.html" data-i18n="nav_home">الرئيسية</a>
+                    <a href="solution.html" data-i18n="nav_solution">الحل</a>
+                    <a href="demo.html" data-i18n="nav_demo">البروتوتايب</a>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_col4_title">اتصل</h4>
+                    <a href="mailto:bandar.cyber@outlook.sa" data-i18n="contact_email">bandar.cyber@outlook.sa</a>
+                    <a href="https://github.com/B2nd9R/elm" data-i18n-href="contact_repo_url"
+                        data-i18n="contact_github">github.com/B2nd9R/elm</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span data-i18n="footer_rights">حقوق النشر © 2026</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

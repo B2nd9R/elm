@@ -1,0 +1,55 @@
+/* 
+  File: css/contact.css
+  Purpose: Contact page (contact.html) specific link layout.
+*/
+
+.contact-container {
+    text-align: center;
+    padding: 120px 0;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.contact-link {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 35px;
+    background: var(--bg-soft);
+    border-radius: var(--radius-md);
+    transition: var(--trans-med);
+    border: 1px solid transparent;
+}
+
+.contact-link:hover {
+    transform: scale(1.05);
+    background: #fff;
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent-glow);
+}
+
+.contact-link i {
+    font-size: 2rem;
+    color: var(--accent);
+}
+
+@media (max-width: 768px) {
+    .contact-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-link {
+        width: 100%;
+        justify-content: center;
+    }
+}

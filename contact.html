@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="nav_contact">عِلّم - تواصل معنا</title>
+
+    <!-- SEO & Social Meta -->
+    <meta name="description" content="تواصل مع فريق عِلّم للمزيد من المعلومات حول المشروع." data-i18n-meta="meta_desc">
+    <meta property="og:title" content="عِلّم - تواصل معنا" data-i18n-meta="meta_og_title">
+    <meta property="og:description" content="تواصل مع فريق عِلّم للمزيد من المعلومات حول المشروع."
+        data-i18n-meta="meta_desc">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="https://github.com/B2nd9R/elm">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="عِلّم - تواصل معنا" data-i18n-meta="meta_og_title">
+    <meta name="twitter:description" content="تواصل مع فريق عِلّم للمزيد من المعلومات حول المشروع."
+        data-i18n-meta="meta_desc">
+    <meta name="twitter:image" content="logo.png">
+
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo"><a href="index.html"><img src="logo.png" alt="Elm Logo" class="nav-logo-img"></a></div>
+            <button class="mobile-toggle" onclick="toggleMenu()" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link" data-i18n="nav_home">الرئيسية</a>
+                <a href="solution.html" class="nav-link" data-i18n="nav_solution">الحل</a>
+                <a href="demo.html" class="nav-link special-link" data-i18n="nav_demo">البروتوتايب</a>
+                <a href="allam.html" class="nav-link" data-i18n="nav_allam">نموذج عّلام</a>
+                <a href="tech.html" class="nav-link" data-i18n="nav_tech">التقنية</a>
+                <a href="team.html" class="nav-link" data-i18n="nav_team">الفريق</a>
+                <a href="contact.html" class="nav-link active" data-i18n="nav_contact">تواصل معنا</a>
+                <button id="lang-toggle" onclick="i18n.switchLanguage()" class="btn-lang"
+                    style="margin-right:10px;">En</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container contact-container" style="text-align:center; padding:100px 0;">
+            <h2 data-i18n="nav_contact" class="reveal"
+                style="font-size:3rem; color:var(--primary); margin-bottom:40px;">تواصل معنا</h2>
+            <div class="contact-links reveal reveal-delay-1" style="justify-content:center; gap:50px;">
+                <a href="mailto:bandar.cyber@outlook.sa" class="contact-link" style="font-size:1.5rem;"><i
+                        class="fa-solid fa-envelope"></i> <span
+                        data-i18n="contact_email">bandar.cyber@outlook.sa</span></a>
+                <a href="https://github.com/B2nd9R/elm" data-i18n-href="contact_repo_url" class="contact-link"
+                    style="font-size:1.5rem;"><i class="fa-brands fa-github"></i> <span
+                        data-i18n="contact_github">github.com/B2nd9R/elm</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pre-Footer CTA -->
+    <section class="pre-footer">
+        <div class="container">
+            <div class="cta-card reveal">
+                <h2 data-i18n="cta_title">ابدأ رحلتك التعليمية اليوم</h2>
+                <p data-i18n="cta_desc">انضم إلى آلاف المعلمين الذين يساهمون في بناء مستقبل التعليم الرقمي في المملكة.
+                </p>
+                <a href="demo.html" class="btn primary-btn" data-i18n="cta_btn">جرب البروتوتايب الآن</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-waves">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3 data-i18n="nav_home">عِلّم</h3>
+                    <p class="footer-tagline" data-i18n="footer_tagline">نحو تعليم وطني ذكي بلمسة عالمية.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_col2_title">روابط</h4>
+                    <a href="index.html" data-i18n="nav_home">الرئيسية</a>
+                    <a href="solution.html" data-i18n="nav_solution">الحل</a>
+                    <a href="demo.html" data-i18n="nav_demo">البروتوتايب</a>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_col4_title">اتصل</h4>
+                    <a href="mailto:bandar.cyber@outlook.sa" data-i18n="contact_email">bandar.cyber@outlook.sa</a>
+                    <a href="https://github.com/B2nd9R/elm" data-i18n-href="contact_repo_url"
+                        data-i18n="contact_github">github.com/B2nd9R/elm</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span data-i18n="footer_rights">حقوق النشر © 2026</span>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

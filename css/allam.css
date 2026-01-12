@@ -1,0 +1,111 @@
+/* 
+  File: css/allam.css
+  Purpose: ALLaM page (allam.html) specific comparison table and model details.
+*/
+
+/* --- Comparison Cards --- */
+.comparison-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.comp-card {
+    background: #fff;
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    position: relative;
+    overflow: hidden;
+    transition: var(--trans-med);
+}
+
+.comp-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-float);
+}
+
+.comp-card.premium {
+    border-top: 5px solid var(--primary);
+    background: linear-gradient(135deg, #fff 0%, rgba(0, 85, 55, 0.02) 100%);
+}
+
+.comp-card.standard {
+    border-top: 5px solid #ddd;
+    opacity: 0.9;
+}
+
+.card-badge {
+    display: inline-block;
+    padding: 8px 18px;
+    background: var(--bg-soft);
+    border-radius: var(--radius-pill);
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.comp-features {
+    list-style: none;
+    padding: 0;
+}
+
+.comp-features li {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--text-muted);
+}
+
+.comp-features li:last-child {
+    border-bottom: none;
+}
+
+.comp-features li i {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 0.8rem;
+}
+
+.comp-card.premium i {
+    background: rgba(0, 85, 55, 0.1);
+    color: var(--primary);
+}
+
+.comp-card.standard i {
+    background: rgba(255, 0, 0, 0.05);
+    color: #d32f2f;
+}
+
+.comp-features li strong {
+    color: var(--text-main);
+}
+
+@media (max-width: 900px) {
+    .comparison-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+.allam-intro-box {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+}
+
+.allam-feature-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
